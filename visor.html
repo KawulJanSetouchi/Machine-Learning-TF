@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.5.1/dist/tfjs-vis.umd.min.js"></script>
+<body>
+    <div>
+        <div>
+            <a href="index.html">ML1</a>
+            <a href="home.html">ML2</a>
+            <a href="visor.html">ML3</a>
+            <a href="visor_bar.html">ML4</a>
+            <a href="line_visor.html">ML5</a>
+          </div>
+
+    <h3>
+        <ul>
+            <li>TensorFlow Visor is a graphic tools for visualizing Machine Learning</li>
+            <li>It contains functions for visualizing TensorFlow Models</li>
+            <li>Visualizations can be organized in Visors (modal browser windows)</li>
+            <li>Can be used with Custom Tools likes d3, Chart.js, and Plotly.js</li>
+            <li>Often called tfjs-vis</li>
+
+        </ul>
+        
+
+
+
+
+    </h3>
+    <h2>TensorFlow Visor</h2>
+
+    <script>
+    
+    const series = ['First', 'Second'];
+    
+    const serie1 = []; 
+    const serie2 = [];
+    for (let i = 0; i < 100; i++) {
+      serie1[i] = {x:i, y:Math.random() * 100};
+      serie2[i] = {x:i, y:Math.random() * 100};
+    }
+    
+    const data = {values: [serie1, serie2], series}
+    
+    tfvis.render.scatterplot({name: "my Plots"}, data);
+    
+    </script>
+</body>
+</html>

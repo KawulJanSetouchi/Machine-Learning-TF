@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.5.1/dist/tfjs-vis.umd.min.js"></script>
+<body>
+
+     <div>
+        <a href="index.html">ML1</a>
+        <a href="home.html">ML2</a>
+        <a href="visor.html">ML3</a>
+        <a href="visor_bar.html">ML4</a>
+        <a href="line_visor.html">ML5</a>
+      </div>
+
+<h2>Tensorflow Visor</h2>
+
+<script>
+const data = [
+  {index: 0, value: 100},
+  {index: 1, value: 200},
+  {index: 2, value: 150},
+  {index: 3, value: 250},
+];
+
+tfvis.render.barchart({name:"my Graphs"}, data);
+</script>
+
+</body>
+</html>
